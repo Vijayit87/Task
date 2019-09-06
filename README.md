@@ -5,12 +5,16 @@ Endpoints
 /api/v2/parse (POST)
 
 Request Body
+```json
 {
     data: “JOHN0000MICHAEL0009994567”
 }
+```
+
 
 Expected Results
 /api/v1/parse – Response Body
+```json
 {
     statusCode: 200,
     data:  {
@@ -19,8 +23,10 @@ Expected Results
         clientId: “9994567”
     }
 }
+```
 
 /api/v2/parse – Response Body
+```json
 {
     statusCode: 200,
     data:  {
@@ -29,3 +35,4 @@ Expected Results
         clientId: “999-4567”
     }
 }
+```
