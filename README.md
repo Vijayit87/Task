@@ -7,7 +7,7 @@ Endpoints
 Request Body
 ```json
 {
-    data: “JOHN0000MICHAEL0009994567”
+    "data": "JOHN0000MICHAEL0009994567"
 }
 ```
 
@@ -16,11 +16,11 @@ Expected Results
 /api/v1/parse – Response Body
 ```json
 {
-    statusCode: 200,
-    data:  {
-        firstName: “JOHN0000”,
-        lastName: “MICHAEL000”,
-        clientId: “9994567”
+    "statusCode": 200,
+    "data":  {
+        "firstName": "JOHN0000",
+        "lastName": "MICHAEL000",
+        "clientId": "9994567"
     }
 }
 ```
@@ -28,11 +28,11 @@ Expected Results
 /api/v2/parse – Response Body
 ```json
 {
-    statusCode: 200,
-    data:  {
-        firstName: “JOHN”,
-        lastName: “MICHAEL”,
-        clientId: “999-4567”
+    "statusCode": 200,
+    "data":  {
+        "firstName": "JOHN",
+        "lastName": "MICHAEL",
+        "clientId": "999-4567"
     }
 }
 ```
